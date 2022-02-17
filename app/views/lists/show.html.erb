@@ -1,0 +1,28 @@
+
+
+<%= link_to "Add Movie", new_list_bookmark_path(@list), class:"btn btn-flat" %>
+
+
+
+  <div class="container">
+    <h1><%= @list.name %></h1>
+  </div>
+
+</div>
+
+<div class = cards>
+      <% @list.bookmarks.each do |bookmark| %>
+
+          <div class = card>
+            <div class="card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= bookmark.movie.poster_url %>)">
+              <%= link_to "x", bookmark_path(bookmark), method: :delete, class: "card-remove-link", data: { confirm: "Are you sure?" } %>
+            </div>
+            <div class = "card-description">
+              <h2><%= bookmark.movie.title %></h2>
+              <p><%= bookmark.movie.overview %></p>
+              <p><%= bookmark.comment %></p>
+            </div>
+            </div>
+
+      <% end %>
+      </div>
