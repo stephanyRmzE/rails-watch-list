@@ -1,7 +1,17 @@
-<div class="container">
-  <%= simple_form_for [@list] do |f|   %>
-    <%= f.input :name %>
-    <%= f.submit %>
-  <% end %>
-  <%= link_to "Back to list", lists_path %>
+
+<div class="row justify-content-md-center">
+  <div class="col col-md-6 col-lg-6">
+    <div class="container-form-ext">
+      <div class="row justify-content-md-center">
+        <div class="col col-md-8 col-lg-10">
+          <div class="container-form-int">
+            <%= simple_form_for [@list] do |f|   %>
+              <%= f.input :name , label: 'Name of the list'%>
+              <%= f.button :submit, "Submit", class: "btn-pink"  %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
