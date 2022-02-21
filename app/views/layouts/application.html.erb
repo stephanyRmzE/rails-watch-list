@@ -10,8 +10,10 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body background-color = #FCEEE5>
-    <%= render "shared/navbar" %>
-    <%= yield %>
+  <body>
+    <div style ="background-color = #ffecb8">
+      <%= render "shared/navbar" %>
+      <%= yield %>
+    </div>
   </body>
 </html>
