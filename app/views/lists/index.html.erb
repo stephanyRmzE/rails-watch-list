@@ -4,18 +4,23 @@
   </div>
 </div>
 
-
-<div class = cards>
-  <% @lists.each do |list| %>
-    <div class = card>
-      <%= link_to list.name, list_path(list), class: "card-link" %>
-      <%= link_to "Delete ", list_path(list),
-              method: :delete,
-              data: { confirm: "Are you sure?" },
-              class: "card-link" %>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <div class = cards>
+        <% @lists.each do |list| %>
+          <div class = card-list>
+            <a  href="<%= list_path(list)%>">
+              <div class="card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                                    url(<%= list.photo.url %>)">
+              </div>
+              <div class = "card-description">
+                <h2><%= list.name %></h2>
+              </div>
+            </a>
+          </div>
+        <% end %>
+      </div>
     </div>
-  <% end %>
+  </div>
 </div>
-
-<%= image_tag("https://res.cloudinary.com/dby8sm7q4/image/upload/v1645195821/dn15mlamvanvx4flfbgb.jpg",
-      width: 400, height: 300, crop: :fill) %>
