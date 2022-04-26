@@ -9,10 +9,10 @@
     <div class="col-12">
       <div class = cards>
         <% @lists.each do |list| %>
-          <div class = card-list>
-            <a  href="<%= list_path(list)%>">
+          <div class = "card-list">
+            <a class="link-list" href="<%= list_path(list)%>">
               <div class="card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                                    url(<%= list.photo.url %>)">
+                                    url(<%= cl_image_path list.photo.key %>)">
               </div>
               <div class = "card-description">
                 <h2><%= list.name %></h2>
