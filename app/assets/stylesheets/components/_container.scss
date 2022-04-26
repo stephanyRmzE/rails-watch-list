@@ -1,5 +1,6 @@
 .container-form-ext{
-  background-color: #FFEEAC;
+  margin: 1em 0;
+  height: 45vh;
 }
 .container-form-int{
   color: rgb(77, 77, 77);
@@ -8,4 +9,11 @@
   margin-top: 20px;
   margin-bottom: 25px;
   background-color: #ecd162;
+  padding: 1em 2em;
+}
+.container-superior{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
 }
