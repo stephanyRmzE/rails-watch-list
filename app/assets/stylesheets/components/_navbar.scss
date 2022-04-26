@@ -6,7 +6,8 @@
   background-size: cover;
   position: relative;
   display: flex;
-  height: 50px;
+  height: 60px;
+  align-items: center;
 }
 
 .navbar-lewagon-white {
@@ -19,4 +20,9 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.nav-item{
+  border: 1px solid #ffd8bd;
+  background-color: #fde6d6;
 }

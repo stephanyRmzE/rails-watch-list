@@ -2,8 +2,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: space-around;
-  margin-top: 20px;
-  column-gap: 25px;
+  margin-top: 8px;
+  column-gap: 30px;
+  row-gap: 20px;
 }
 
 // Smallest device
@@ -43,32 +44,41 @@
 
 .card-movie{
   width: 100%;
-  height: 580px;
-  background-color: #ffecb8;
+  height: 525px;
+  background-color: #FE9B3DE6;
   border-radius: 1%;
+  box-shadow: 5px;
 }
 
 .card-list{
   width: 100%;
-  height: 300px;
+  height: 330px;
+  text-align: center;
+  background-color: #FE9B3DE6;
+  border-radius: 1%;
+  box-shadow: 5px;
+
+  .card-image{
+    margin-top: 4%;
+    background-size: 92%;
+    height: 80%;
+  }
 }
 
 .card-image{
-  margin-top: 5%;
-  margin-bottom: 4%;
+  margin-top: 4%;
+  margin-bottom: 2%;
   position: relative;
-  background-size: 80%;
+  background-size: 90% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 75%;
+  height: 74%;
   border: 2px;
-  border-radius: 2px;
-  box-shadow: 5px;
 }
 
 .card-remove-link{
   position: absolute;
-  right: 15px;
+  right: 7%;
   color: white;
   font-size: 20px;
 }
@@ -82,12 +92,14 @@
   font-size: 16px;
   font-weight: bold;
   color: rgb(117, 117, 117);
+  padding: 0 10px;
 }
 
 .card-description p {
   font-size: 12px;
   line-height: 1.4;
   opacity: .7;
+  padding: 0 10px;
 }
 
 .card-link{
