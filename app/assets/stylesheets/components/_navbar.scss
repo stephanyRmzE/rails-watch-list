@@ -16,13 +16,10 @@
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+  margin-top: 2px;
+  background-color: rgba(255, 255, 255, .1);
 }
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
-}
-
-.nav-item{
-  border: 1px solid #ffd8bd;
-  background-color: #fde6d6;
 }

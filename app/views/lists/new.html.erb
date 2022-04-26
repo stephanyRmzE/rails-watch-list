@@ -1,13 +1,13 @@
 
 <div class="row justify-content-center">
-  <div class="col-10 col-md-5 col-lg-5">
+  <div class="col-10 col-md-6 col-lg-5">
     <div class="container-form-ext">
       <div class="row justify-content-center">
           <div class="container-form-int ">
           <h2>Add a new list</h2>
             <%=  simple_form_for [@list], :html=> { class: 'form-list' } do |f|  %>
-              <%= f.input :name , label: 'Name of the list'%>
-              <%= f.input :photo, label: 'Choose a photo...', as: :file , required: true, input_html: { label: "photo" } %>
+              <%= f.input :name , label: 'Name'%>
+              <%= f.input :photo, as: :file, input_html: { class: 'form-photo-label' }, :label => "Image"  %>
               <%= f.button :submit, "Submit", class: "btn-orange"  %>
             <% end %>
           </div>
