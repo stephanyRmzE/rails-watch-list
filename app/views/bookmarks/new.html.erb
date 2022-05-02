@@ -4,11 +4,12 @@
       <h1>Make a bookmark for <%= @list.name %></h1>
       <%= simple_form_for [@list, @bookmark] do |f|   %>
         <%= f.input :comment %>
-        <%= f.association :movie %>
+        <%= f.association :movie, label_method: :title, value_method: :id, include_blank: false %>.
+        <%= f.input :movie_title, as: :search,
+        data: {autocomplete_source: movies_path} %>
         <%= f.submit %>
       <% end %>
       <%= link_to 'Back', list_path(@list) %>
     </div>
   </div>
 </div>
-
