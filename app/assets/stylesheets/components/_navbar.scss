@@ -1,6 +1,5 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background-image: url("https://images.unsplash.com/photo-1614850715649-1d0106293bd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   transition: 0.5s background-color ease;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,8 +7,11 @@
   display: flex;
   height: 60px;
   align-items: center;
+  background-color: #430d22;
+  }
+.nav-link{
+  color: antiquewhite;
 }
-
 .navbar-lewagon-white {
   background-color: white;
 }
@@ -27,7 +29,6 @@
 
 @media only screen and (max-width: 576px) {
   .navbar-nav {
-    background-color: rgba(255, 255, 255, .8);
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
@@ -38,7 +39,10 @@
     text-align: center;
   }
   .nav-item{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
   }
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: antiquewhite;
 }
