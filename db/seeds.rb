@@ -2,7 +2,7 @@ require 'open-uri'
 require 'json'
 
 puts "Cleaning up database..."
-Bookmarks.destroy_all
+Bookmark.destroy_all
 List.destroy_all
 Movie.destroy_all
 
