@@ -47,14 +47,15 @@
   background-color: #863848;
   border-radius: 0.3em;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  height: fit-content;
 
   .card-image-delete{
     position: relative;
   }
 
   .card-image {
-        margin: 1% 0% 2% 0%;
-        height: 60vh;
+    margin: 1%;
+    width: 98%;
   }
 
 }
@@ -92,7 +93,11 @@
 .card-description{
   text-decoration: none;
   justify-content: center;
-  height: 20vh;
+  height: 14vh;
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  padding: 0 10px;
 }
 
 .card-description h2 {
@@ -101,13 +106,10 @@
   color: white;
 }
 
-.card-description p {
-  height: 15vh;
-  font-size: 12px;
-  line-height: 1.4;
-  opacity: .7;
-  padding: 0 10px;
-  overflow-y: auto;
+.card-description-overview {
+  height: 50%;
+
+  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
@@ -144,5 +146,5 @@
 }
 
 .card-show{
-  display: none;
+  display: block;
 }

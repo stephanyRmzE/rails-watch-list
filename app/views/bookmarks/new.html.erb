@@ -5,7 +5,7 @@
       <%= simple_form_for [@list, @bookmark] do |f|   %>
         <%= f.input :comment %>
         <%= f.association :movie, collection: Movie.all(), input_html: {class: 'form-select', id: 'dropdown-choice-select'} %>
-        <%= f.submit %>
+        <%= f.button :submit, "Submit", class: "btn-purple"  %>
       <% end %>
       <%= link_to 'Back', list_path(@list) %>
     </div>

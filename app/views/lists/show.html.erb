@@ -12,7 +12,7 @@
 
                 <div class = card-movie data-controller="show-description" data-action="click->show-description#show">
                   <div class="card-image-delete">
-                      <%= image_tag bookmark.movie.poster_url, class:"poster" %>
+                      <%= image_tag bookmark.movie.poster_url, class:"card-image" %>
                       <%= link_to "x", bookmark_path(bookmark), method: :delete, class: "card-remove-link", data: { confirm: "Are you sure?" } %>
                   </div>
                   <div class = "card-title-rating">
@@ -20,8 +20,8 @@
                       <p><%= bookmark.movie.rating %></p>
                       <i class="fas fa-star"></i>
                     </div>
-                  <div class = "card-description" data-show-description-target="description">
-                    <p><%= bookmark.movie.overview %></p>
+                  <div class = "card-description d-none" data-show-description-target="description">
+                    <p class = "card-description-overview"><%= bookmark.movie.overview %></p>
                     <p><%= bookmark.comment %></p>
                   </div>
                 </div>
