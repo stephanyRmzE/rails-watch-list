@@ -43,35 +43,41 @@
 }
 
 .card-movie{
-  width: 100%;
+  width: auto;
   background-color: #863848;
   border-radius: 0.3em;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
+  .card-image-delete{
+    position: relative;
+  }
+
   .card-image {
         margin: 1% 0% 2% 0%;
-        position: relative;
-        background-size: 97% 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 65vh;
-        border-radius: 3%;
+        height: 60vh;
   }
 
 }
 
 .card-list{
-  height: 34vh;
-  text-align: center;
-  background-color: #863848;
-  border-radius: 0.3em;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  margin: 0 0 1em 0em;
+    height: 38vh;
+    text-align: center;
+    background-color: #863848;
+    border-radius: 0.3em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 0 0 1em 0em;
+    width: 30vw;
+
+  p{
+    font-size: 16px;
+  }
 
   .card-image{
     margin: 1% 1%;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     height: 86%;
+    background-repeat: no-repeat;
   }
 }
 
