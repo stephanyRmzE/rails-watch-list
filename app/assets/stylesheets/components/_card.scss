@@ -49,10 +49,6 @@
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   height: fit-content;
 
-  .card-image-delete{
-    position: relative;
-  }
-
   .card-image {
     margin: 1%;
     width: 98%;
@@ -84,10 +80,8 @@
 
 
 .card-remove-link{
-  position: absolute;
-  right: 7%;
-  color: white;
-  font-size: 20px;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .card-description{
@@ -108,9 +102,9 @@
 
 .card-description-overview {
   height: 50%;
-
   overflow-y: scroll;
   scroll-behavior: smooth;
+
 }
 
 .card-link{
@@ -145,6 +139,26 @@
   }
 }
 
-.card-show{
-  display: block;
+.card-comment-delete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0.5em;
+
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+    opacity: .7;
+    margin: 0;
+    padding: 0 0.5em;
+    color: aliceblue;
+  }
+
+  i {
+    color: white;
+    margin: 0;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
 }

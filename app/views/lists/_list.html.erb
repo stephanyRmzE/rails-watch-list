@@ -1,0 +1,26 @@
+<div data-refresh-list-target="list">
+  <div class = cards>
+    <% @bookmarks.each do |bookmark| %>
+        <div class = card-movie data-controller="show-description" data-action="click->show-description#show">
+          <%= image_tag bookmark.movie.poster_url, class:"card-image" %>
+          <div class = "card-title-rating">
+              <h2><%= bookmark.movie.title %></h2>
+              <p><%= bookmark.movie.rating %></p>
+              <i class="fas fa-star"></i>
+            </div>
+          <div class = "card-description d-none" data-show-description-target="description">
+            <p class = "card-description-overview"><%= bookmark.movie.overview %></p>
+            <div class = "card-comment-delete">
+            <div>
+              <i class="fas fa-comment-dots d-inline"  style='color: white;'></i>
+              <p class="d-inline"><%= bookmark.comment %></p>
+            </div>
+              <%= link_to bookmark_path(bookmark), method: :delete, data: { confirm: "Are you sure?" } do %>
+                <i class="fas fa-trash-alt"></i>
+              <% end %>
+            </div>
+          </div>
+        </div>
+    <% end %>
+  </div>
+<div data-refresh-list-target="list">
